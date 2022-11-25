@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-counter</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+
+<body>
+    <p class="nav"><a href="index.html">Go back</a></p>
+
+    <button class="open-button button" type="button">Open form</button>
+
+    <div class="bakdrop is-hidden">
+        <div class="modal">
+            <button class="close-button" type="button">Close form</button>
+            <form>
+                <label>
+                    <textarea maxlength="40" placeholder="Write your text"></textarea>
+                </label>
+                <div class="textarea-counter">There are <span></span> characters left to enter</div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/text-сounter.js" type="module"></script>
+</body>
+
+</html>
