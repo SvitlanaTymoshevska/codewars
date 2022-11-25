@@ -1,3 +1,4 @@
+//  1) ======================================================================================================
 function getSum(a, b) {
     if (a === b) {
         return a;
@@ -17,7 +18,7 @@ function getSum(a, b) {
 }
 // console.log(getSum(5, 10));
 
-// Binary array to number ==================================================================================
+//  2) Binary array to number ==================================================================================
 // const arr = [1, 0, 1, 0, 0, 1, 1, 0];
 const binaryArrayToNumber = arr => {
     const resArr = arr.reverse().map((element, index) => Math.pow(2, index) * element);
@@ -30,7 +31,7 @@ const binaryArrayToNumber = arr => {
 };
 // console.log(binaryArrayToNumber(arr));
 
-// Shortest Word ===========================================================================================
+//  3) Shortest Word ===========================================================================================
 // const s = 'bitcoin take over the world maybe who knows perhaps';
 function findShort(s) {
     // const wordsArray = s.split(' ');
@@ -47,7 +48,7 @@ function findShort(s) {
 }
 // console.log(findShort(s));
 
-// Sum of Digits / Digital Root ============================================================================
+//  4) Sum of Digits / Digital Root ============================================================================
 // const n = 32658;
 function digitalRoot(n) {
     let digital = n;
@@ -62,14 +63,14 @@ function digitalRoot(n) {
 }
 // console.log(digitalRoot(n));
 
-// Square Every Digit ======================================================================================
+//  5) Square Every Digit ======================================================================================
 // const n = 9119;
 function squareDigits(num) {
     return Number.parseInt(String(num).split('').map((e) => Math.pow(Number(parseInt(e)), 2)).join(''));
 }
 // console.log(squareDigits(n));
 
-// Pete, the baker ========================================================================================
+//  6) Pete, the baker ========================================================================================
 // // must return 2
 // const recipe = { flour: 500, sugar: 200, eggs: 1 };
 // const available = { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }; 
@@ -112,7 +113,7 @@ function cakes1(recipe, available) {
 }
 // console.log(cakes(recipe1, available1))
 
-// Count the smiley faces! ===============================================================================
+//  7) Count the smiley faces! ===============================================================================
 // const arr = [':)', ';(', ';}', ':-D'];       // should return 2;
 // const arr1 = [';D', ':-(', ':-)', ';~)']      // should return 3;
 // const arr2 = [';]', ':[', ';*', ':$', ';-D']; // should return 1;
@@ -136,7 +137,7 @@ function countSmileys(arr) {
 }
 // console.log(countSmileys(arr2));
 
-// Bit Counting ==========================================================================================
+//  8) Bit Counting ==========================================================================================
 // const n = 3258;
 var countBits = function (n) {
     let iterator = n;
@@ -155,7 +156,7 @@ var countBits = function (n) {
 // var countBits = n => n.toString(2).split('0').join('').length;
 // console.log(countBits(n));
 
-// Count characters in your string =======================================================================
+//  9) Count characters in your string =======================================================================
 // const string = 'fhdkjfhajhf';
 function count(string) {
     const counter = {};
@@ -170,7 +171,7 @@ function count(string) {
 }
 // console.log(count(string));
 
-// Delete occurrences of an element if it occurs more than n times =======================================
+// 10) Delete occurrences of an element if it occurs more than n times =======================================
 // const list1 = [1, 2, 3, 1, 2, 1, 2, 3];
 // const list = [20, 37, 20, 21];
 // function deleteNth(arr, n) {
@@ -190,7 +191,7 @@ const deleteNth = (a, x) => {
 }
 // console.log(deleteNth(list1, 2));
 
-// Find the missing letter ==============================================================================
+// 11) Find the missing letter ==============================================================================
 // const array1 = ['a', 'b', 'c', 'd', 'f'];
 // const array2 = ['O', 'Q', 'R', 'S'];
 function findMissingLetter(array) {
@@ -224,7 +225,7 @@ function findMissingLetter1(array) {
 }
 // console.log(findMissingLetter(array1));
 
-// Simple Pig Latin =====================================================================================
+// 12) Simple Pig Latin =====================================================================================
 // const phrase1 = 'Pig latin is cool'; // igPay atinlay siay oolcay
 // const phrase2 = 'Hello world !';     // elloHay orldway !
 function pigIt(str) { 
@@ -243,7 +244,7 @@ function pigIt(str) {
 }
 // console.log(pigIt(phrase1));
 
-// Calculating with Functions ===========================================================================
+// 13) Calculating with Functions ===========================================================================
 function zero(data) {
     if (data) {
         const {expression, value } = data;
@@ -361,7 +362,7 @@ function dividedBy(n) {return function(v) {return v / n}}
 // console.log(six(dividedBy(two())));
 // console.log(eight(dividedBy(zero())));
 
-// Your order, please ==========================================================================================
+// 14) Your order, please ==========================================================================================
 // const string1 = "is2 Thi1s T4est 3a";                // -->  "Thi1s is2 3a T4est"
 // const string2 = "4of Fo1r pe6ople g3ood th5e the2";  // -->  "Fo1r the2 g3ood 4of th5e pe6ople"
 // const string3 = "";                                  // -->  ""
@@ -383,7 +384,7 @@ function order(words) {
 // console.log(order(string3));
 
 
-// Most frequently used words in a text ========================================================================
+// 15) Most frequently used words in a text ========================================================================
 // const text1 = "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing. An olla of rather more beef than mutton, a salad on most nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra on Sundays, made away with three-quarters of his income."
 // // # => ["a", "of", "on"]
 // const text2 = "e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e";
@@ -437,33 +438,65 @@ function topThreeWords(text) {
 // console.log(topThreeWords(text1));
 
 
-// PaginationHelper ============================================================================================
+// 16) PaginationHelper ============================================================================================
+const array = ['a', 'b', 'c', 'd', 'e', 'f'];
+const itemsPerPage = 4;
+
 // TODO: complete this object/class
 
 // The constructor takes in an array of items and a integer indicating how many
 // items fit within a single page
-function PaginationHelper(collection, itemsPerPage){
-  
+function PaginationHelper(collection, itemsPerPage) {
+    this.collection = collection;
+    this.itemsPerPage = itemsPerPage;
+    this.numberOfPages = Math.ceil(this.collection.length / this.itemsPerPage);
 }
 
 // returns the number of items within the entire collection
-PaginationHelper.prototype.itemCount = function() {
-  
+PaginationHelper.prototype.itemCount = function () {
+    return this.collection.length;
 }
 
 // returns the number of pages
-PaginationHelper.prototype.pageCount = function() {
-  
+PaginationHelper.prototype.pageCount = function () {
+    return this.numberOfPages;
 }
 
 // returns the number of items on the current page. page_index is zero based.
 // this method should return -1 for pageIndex values that are out of range
-PaginationHelper.prototype.pageItemCount = function(pageIndex) {
-  
+PaginationHelper.prototype.pageItemCount = function (pageIndex) {  
+    if (pageIndex > this.numberOfPages - 1) {
+        return -1;
+    }
+    if (pageIndex < this.numberOfPages - 1) {
+        return this.itemsPerPage;
+    }
+    if (pageIndex === this.numberOfPages - 1) {
+        return this.collection.length % this.itemsPerPage;
+    }
 }
 
 // determines what page an item is on. Zero based indexes
 // this method should return -1 for itemIndex values that are out of range
 PaginationHelper.prototype.pageIndex = function(itemIndex) {
-  
+    if (itemIndex > this.collection.length - 1 || itemIndex < 0) {
+        console.log('I am here');
+        return -1;
+        
+    }
+    return itemIndex !== 0? Math.ceil(itemIndex / this.itemsPerPage) - 1: 0;
 }
+
+// var helper = new PaginationHelper(['a','b','c','d','e','f'], 4);
+// console.log(helper.itemCount()); //should == 6
+// console.log(helper.pageCount()); //should == 2
+// console.log(helper.pageItemCount(0)); //should == 4
+// console.log(helper.pageItemCount(1)); // last page - should == 2
+// console.log(helper.pageItemCount(2)); // should == -1 since the page is invalid
+
+// // pageIndex takes an item index and returns the page that it belongs on
+// console.log(helper.pageIndex(5)); //should == 1 (zero based index)
+// console.log(helper.pageIndex(2)); //should == 0
+// console.log(helper.pageIndex(20)); //should == -1
+// console.log(helper.pageIndex(-10)); //should == -1
+// console.log(helper.pageIndex(0)); //should == 0
