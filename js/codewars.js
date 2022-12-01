@@ -500,3 +500,21 @@ PaginationHelper.prototype.pageIndex = function(itemIndex) {
 // console.log(helper.pageIndex(20)); //should == -1
 // console.log(helper.pageIndex(-10)); //should == -1
 // console.log(helper.pageIndex(0)); //should == 0
+
+
+// Reversed Strings ===================================================================================================
+function solution(str) {
+    const array = str.split('') ;
+    const newArray = [];
+    array.map((el) => { 
+        newArray.unshift(el);
+    });
+
+    return newArray.join('');
+}
+
+function solution1(str){
+  return str.split('').reverse().join('');  
+}
+
+// console.log(solution('world'))
